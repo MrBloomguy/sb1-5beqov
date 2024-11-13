@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Syne', sans-serif;
+  }
+}
+
+.glass-effect {
+  @apply bg-white/5 backdrop-blur-lg;
+}
+
+.table-header {
+  @apply text-sm text-gray-400 font-medium px-4 py-3 bg-gray-800/50;
+}
+
+.merchant-row {
+  @apply hover:bg-gray-700/50 transition-all duration-200;
+}
+
+.merchant-cell {
+  @apply px-4 py-4 align-middle;
+}
+
+.badge {
+  @apply inline-flex items-center px-2 py-1 rounded text-xs font-medium;
+}
+
+.badge-success {
+  @apply bg-green-500/20 text-green-400;
+}
+
+.badge-warning {
+  @apply bg-yellow-500/20 text-yellow-400;
+}
+
+.btn-primary {
+  @apply bg-[#F0B90B] hover:bg-[#F0B90B]/90 text-black font-medium px-6 py-2 rounded transition-colors;
+}
+
+.input-focus {
+  @apply focus:ring-2 focus:ring-[#F0B90B] focus:border-transparent outline-none;
+}
+
+.tab-active {
+  @apply bg-[#F0B90B] text-black;
+}
+
+.tab-inactive {
+  @apply bg-gray-700 text-gray-300 hover:bg-gray-600;
+}
